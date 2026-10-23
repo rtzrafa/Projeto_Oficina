@@ -1,0 +1,36 @@
+
+<!-- Modal Atualizar Data do Agendamento (Regra de Negócio) -->
+<div id="modalAtualizarData" class="modal">
+    <div class="modal-content">
+        <h3>Atualizar Data do Agendamento</h3>
+        <p>Selecione o novo dia e horário para o serviço:</p>
+
+        <form id="formAtualizarData" method="POST">
+            <div class="form-group">
+                <label for="nova_data_agendamento">
+                    Nova Data e Horário *:
+                </label>
+                <input
+                    type="datetime-local"
+                    id="nova_data_agendamento"
+                    name="nova_data_agendamento"
+                    required
+                >
+            </div>
+
+            <div class="modal-actions">
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    onclick="fecharModal('modalAtualizarData')"
+                >
+                    Cancelar
+                </button>
+
+                <button type="submit" class="btn btn-primary">
+                    Salvar Nova Data no BD
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
